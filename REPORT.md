@@ -7,3 +7,18 @@ As described in the original [paper](https://storage.googleapis.com/deepmind-med
 
 * Greater data efficiency as one experience can be used to update the network weights multiple times
 * Better learning resulting from randomly sampling the experiences instead of only learning from consecutive time steps
+
+![Algorithm from the used from the [paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)](/algo.png)
+## Implementation
+The implementation of the DQN can be found in the files model.py and dqn_agent.py.
+
+model.py makes use of PyTorch to create a feedforward neural network with 2 fully connected layers of 128 units each. The input to the network is the state (37 nodes corresponding to state dimensions) and the output of the network corresponds to the 4 available actions.
+NOTE: All of the parameters can be adjusted for any environment.
+
+dqn_agent.py consists of a class constructor for the deep q-learning agent as well as for the replay memory.
+
+### Hyperparameters
+* maximum number of timesteps per episode = 1000
+* epsilon_start = 1.0
+* epsilon_end = 0.01
+* epsilon_decay = 0.95
