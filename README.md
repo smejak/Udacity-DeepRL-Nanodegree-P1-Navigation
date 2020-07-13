@@ -15,6 +15,7 @@ There are four possible actions:
 The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction. This information is used to determine the best actions.
 
 ## Getting started
+The following section was taken from [Udacity's GitHub](https://github.com/udacity/deep-reinforcement-learning#dependencies) for its simple guide on how to get your local machine ready for reinforcement learning with Unity.
 ## Dependencies
 
 To set up your python environment to run the code in this repository, follow the instructions below.
