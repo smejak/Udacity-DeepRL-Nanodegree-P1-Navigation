@@ -18,7 +18,24 @@ NOTE: All of the parameters can be adjusted for any environment.
 dqn_agent.py consists of a class constructor for the deep q-learning agent as well as for the replay memory.
 
 ### Hyperparameters
+Hyperparameters for the DQN agent can be found in dqn_agent.py.
+
+Parameters used for the training algorithm:
 * maximum number of timesteps per episode = 1000
 * epsilon_start = 1.0
 * epsilon_end = 0.01
 * epsilon_decay = 0.95
+
+## Results
+```
+Episode 100	Average Score: 3.12
+Episode 200	Average Score: 8.46
+Episode 300	Average Score: 12.04
+Episode 358	Average Score: 13.01
+Environment solved in 258 episodes!	Average Score: 13.01
+```
+![](/learning_curve.png)
+The results show that the environment has been successfully solved as the average score over 100 consecutive episodes was more than +13.
+
+### Additional results
+I was curious to see how the agent would improve if the training did not terminate after first solving the environment. After training it for 600 episodes,  
