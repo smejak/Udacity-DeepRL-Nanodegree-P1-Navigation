@@ -3,6 +3,8 @@ This repository consists of my implementation of the first project from Udacity'
 ## Project details
 This project consists of a reinforcement learning agent which solves the Banana navigation environment based on Unity machine learning problems. See [Unity ML-agents](https://github.com/Unity-Technologies/ml-agents) for more details.
 
+![](bananatrained.gif)
+
 The environment is considered solved when the agent receives a reward of +13 over 100 consecutive episodes. A reward of +1 is received whenever the agent collects a yellow banana and -1 whenever the agent collects a blue banana. 
 
 There are four possible actions:
